@@ -15,7 +15,7 @@ from PIL import Image
 
 # 设置mumu模拟器的窗口名称、位置和尺寸
 mumu_title = "MuMu安卓设备"
-ADB_DEVICE = "127.00.1:16384"
+ADB_DEVICE = "127.0.0.1:16384"
 
 # 全局变量，用于缓存最后一次截图
 last_screenshot = None
@@ -261,4 +261,5 @@ def run_yys_script(config_params):
     send_email_notification("阴阳师脚本运行完毕", f"脚本已完成 {cycle_number} 次循环。")
 
 # 移除原有的 try-except 块和 exit()，让主调函数来处理异常。
+
 # send_email_notification() 函数现在也需要接受参数，或从全局变量中读取。
